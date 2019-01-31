@@ -1,0 +1,223 @@
+
+###############################################################################
+# Metadata
+###############################################################################
+title: ČSOP ARION
+description: | 
+    • Základní organizace Českého svazu ochránců přírody se sídlem v Olomouci (ZO ČSOP 71/18) • Péče o přírodu, živé zahrady, údržba zeleně, přednášky, akce pro veřejnost, osvětová činnost • Střední Morava, Východní Čechy, Vysočina •
+owner: ČSOP ARION
+first_published: 2018
+email: roman.kalous@csoparion.cz
+keywords: ARION, ochrana přírody, NGO, nezisková organizace
+google-tracking-id:
+baseurl: 
+url: csoparion.cz
+markdown: kramdown
+verze: 1.2 19-01-30
+#sass:
+#  style: compressed
+###############################################################################
+# kontakty
+###############################################################################
+social:
+  github: https://github.com/<username>
+  linkedin-square: https://linkedin.com/in/<username>
+  facebook-official: https://facebook.com/csop.arion/
+  #email: /contact/
+###############################################################################
+# Databázové položky
+# ###############################################################################
+gps: 
+###############################################################################
+# Blok pod hlavičkou
+###############################################################################
+introTit: Co je naším posláním?                                                      
+introTxt: Soustředíme na střední Moravu a východní Čechy. Pátráme po přírodovědně    cenných lokalitách, o které se poté s láskou staráme. Občas se podíváme i za         hranice. Intenzivně spolupracujeme s místními botaniky a zoology, aby nám pomohli    nalézt ty nejcennější a nejohroženější druhy a lokality. Často začínáme tam, kde to  jiné podobné organizace vzdávají. Vždyť mnohé druhy, které se snažíme zachránit pro  další generace, nikde jinde v České republice neuvidíte! Jsou jimi například vzácní  motýli modrásek černoskvrnný a hnědásek květelový, saranče vrzavá, křivatec český a  mnohé další. Každým dnem se náš záběr rozšiřuje tak, abychom zachránili největší     poklady naší přírody!
+###############################################################################
+# Blok s miniaturami obrázků
+###############################################################################
+blok:
+    -
+        tit: Údržba přírodně cenných lokalit
+        txt: |
+            - výsadby zeleně, lesní výsadby
+            - budování živých zahrad (jezírka, skalky pro ještěrky, motýlí záhony,   ptačí budky…)
+            - údržba zeleně, kácení dřevin
+            - budování návštěvnické infrastruktury
+            - výukové programy pro školy
+            - osvětové akce pro veřejnost
+            - dobrovolnické víkendovky a tábory na nejzajímavějších lokalitách       našeho kraje
+            - exkurze do přírody
+            - provoz první olomoucké semínkovny
+            - a je toho mnohem víc! Nebojte se nás kontaktovat, umíme i zázraky na   počkání!
+        img: hranenam.jpg
+    -
+        tit: Hlavní zájmové druhy motýlů
+        txt: |
+            Naším velkým cílem je záchrana či znovunavrácení do přírody některých krásných a vzácných druhů motýlů
+            - modrásek černoskvrnný (<it>Phengaris arion</it>) 
+            - hnědásek květelový
+            - okáč skalní
+            - modrásek bahenní (<it>Phengaris nausithous</it>) 
+        img: 18-07-15-004.JPG
+    - 
+        tit: Hlavní zájmové druhy rostlin
+        txt: |
+            "A zajímají nás samozřejmě i rostliny. Na našich lokalitách najdete třeba tyto klenot:"
+            - pětiprstka žežulník
+            - jalovec obecný
+            - okrotice bílá
+            - cídivka různobarvá
+            - hořec křížatý
+            - hořec hořepník (<it>Gentiana pneumonanthe</it>)
+            - hořeček brvitý
+            - prstnatec májový
+            - upolín nejvyšší
+            - a spoustu dalších
+        img: 18-01-17-118.JPG
+    -
+        tit: Boj se suchem
+        txt: Obnova přirorených mokřadů, budování malých vodních nádrží ve volné krajině
+        img: 18-11-09-000.JPG
+#    -
+#        tit: Bezobratlí 
+#        txt: |
+#            - modrásek bahenní (Phengaris nausithous) 
+#        img:
+#    - 
+#        tit: Obratlovci 
+#        txt: | 
+#            - ještěrka živorodá (Zootoca vivipara) 
+#            - slepýš křehký (Anguis fragilis)    
+#        img: 
+###############################################################################
+# timeline
+###############################################################################
+timelinetitle: "Naše historie a současnost"
+timeline: true
+tm:
+    -
+        tit: Co bylo před založením?
+        txt: Naše organizace vznikla v únoru roku 2015 a byli jsme v podstatě parta  studentů, které nadchla myšlenka dělat něco aktivně pro naši krásnou přírodu. Ale    nezačínali jsme od nuly – někteří z nás už tenkrát měli bohaté praktické zkušenosti  z letních brigád u ČSOP JARO Jaroměř. Od našich jaroměřským kolegů jsme nezískali    jen know-how, ale také první zapůjčený křovinořez, první víceméně pojízdné vozidlo a v neposlední řadě taky první lokality na česko-moravském pomezí, které nám s velkou  úlevou a radostí přenechali.
+        img: logoJaro.jpg
+    -
+        tit: 2016
+        txt: Rozjíždíme se… Po přípravných jednáních s vlastníky lokalit a prvních   zkušenostech se získáváním stanovisek a povolení se pouštíme do opravdové práce.     Hned na jaře jsme vykáceli několik hektarů zarostlých starých pastvin, kde dosud     přežívaly zbytkové populace kriticky ohroženého modráska černoskvrnného. A u toho    přemýšlíme, jak se vlastně naše organizace bude jmenovat. Latinské jméno modráska    černoskvrnného, které je Phengaris arion, bylo velmi inspirativní. Od teď jsme       Arioni!
+        img: aktivity.jpg
+        pos: timeline-inverted
+    -
+        tit: 2017
+        txt: Jedeme na plný plyn… Staráme se již o bezmála 20 hektarů přírodně       cenných lokalit. Ze střední Moravy jsme se prosekali a prokáceli třeba až na Praděd, kde dáváme do pořádku zanikající květnaté horské louky. Taky jsme každou chvíli na   jižní Moravě, kde pomáháme našim kamarádům z ČSOP Morava se záchrannou takových      lokalit, jako jsou Pouzdřanská step, Svatý kopeček u Mikulova, Syslovce u Nenkovic a podobně. Když se chceme podívat ještě dál, pomáháme našim kolegům na Slovensku.      Kamarádi z organizací KOZA a Pre Prírodu nás vždy rádi vidí, protože už ví, že když  přijede Arion, budou minimálně létat stromy vzduchem. A nezapomeňme na krásný        projekt ve spolupráci s ČSOP Pražská pastvina a ČSOP JARO Jaroměř – pustili jsme se  naplno do záchrany jednoho z našich nejvzácnějších motýlů – okáče skalního. Naše     křovinořezy proto okusily jak poslední české lokality v Českém středohoří, tak třeba lokality v okolí Vídně a Bratislavy. A brzy vrátíme okáče skalní i do Prahy! A       v neposlední řadě jsme spolu s kupou dalších organizací založili Koalici proti       palmovému oleji, která má za cíl skrze snížení spotřeby palmového oleje zpomalit     kácení tropických deštných lesů. A vypadá to, že se nám to podaří. Nebo minimálně    výrobci potravin mají z naší kampaně strach a začínají palmový olej ve velkém        nahrazovat našimi evropskými oleji!
+        img: 17-11-09-059.JPG
+    -
+        tit: 2018
+        txt: |
+            Nepolevujeme… V roce 2018 jsme se skutečně nezastavili. Všechny naše    tradiční lokality vzkvétají a populace modrásků černoskvrnných, na kterých je to     nejlépe vidět, vzrostly z původních několika málo jedinců někdy až na stovky         jedinců! A to nás popohání dál… V letošním roce jsme proto šli do zatím největší     výzvy – 4 hektary vzrostlého borůvčí na okraji Velké kotliny v Jeseníkách. Dokázali  jsme to, a tak věříme, že teď nás už nezastaví nic!
+        img: 18-06-09-124.JPG
+        pos: timeline-inverted
+    -   
+        tit: 2019
+        txt: Jaký bude rok 2019? Nechme se překvapit
+        img: zapojse.jpg
+###############################################################################
+# Dvousloupcový blok s bledě zeleným podkladem, bez obrázků s fant-awesome
+###############################################################################
+boxTit: Ohrožení, ochrana & přístupnost 
+boxTxt: 
+box:
+    -
+        tit: Kdo se může zapojit?
+        txt: |
+            -  Dobrovolník
+            -  Brigádník
+            -  Dárce
+            -  Podporovatel, Propagátor
+            -  Organizátor
+            -  Odborný poradce
+            -  Botanik
+            -  Zoolog
+            -  Ornitolog
+            -  Krajinář
+            -  Průvodce
+            -  Ajťák
+            -  Projektový manažer
+            -  Fundraiser
+            -  Kuchař
+            -  Truhlář
+            -  Umělec
+            -  Fotograf
+            -  Lektor EVVO
+            -  Inovátor
+            -  Vyjednavač
+            -  Řidič
+            -  Věrný přítel na FB
+        icn:
+    -
+        tit: Aktivity 
+        txt: |
+            -  Výzkum a realizaci projektů
+            -  Granty
+            -  Vzdělávací a výukové programy
+            -  Biologické průzkumy
+            -  Interpretační programy
+            -  Zelený PR pro firmy
+            -  Dobrovolnictví
+            -  Kampaně
+            -  Přednášky
+            -  Projekce
+            -  Akce pro veřejnost
+            -  Poznávací výlety
+            -  Průvodcovství přírodou
+            -  Stáže pro studenty
+        icn: task
+    -
+        tit: Kde jsme?
+        txt: | 
+                - Olomouc
+                -  Haná
+                -  Východní Čechy
+                -  Jižní Morava
+                -  Orlické hory, České Středohoří
+                -  Slovensko
+                -  Indonésie
+        icn: 
+###############################################################################
+# Patka
+###############################################################################
+loga:
+    -
+        img: logoJaro.jpg
+        popis: ČSOP JARO Jaroměř
+        url: www.jarojaromer.cz
+    -   
+        popis: ČSOP Morava
+        img: logoCsopMorava.jpg
+        url: http://www.csopmorava.cz/
+    -   
+        img: logoKoza.png
+        popis: Karpatské ochranárske združenie altruistov
+        url: http://koza.sk/
+    -   
+        img: logoPrePrirodu.png
+        popis: Pre Prírodu
+        url: http://preprirodu.sk/
+    -   
+        img: logoPastvina.png
+        popis: Pražská pastvina
+        url: http://prazskapastvina.cz/
+    -   
+        img: logoPalmOil.png
+        popis: Koalice proti palmovému oleji
+        url: http://stoppalmovemuoleji.cz/
+###############################################################################
+# Lidé
+###############################################################################
+lideTit: "Lidé & kontakty"
+lideTxt: "ZO ČSOP 71/18 Arion, Kmochova 25, 779 00 Olomouc, IČO 04377818, číslo účtu 2600875491/2010"
+logaTit: "Kdo nás podporuje & a koho podpurujeme my"
+logaTxt: ""
+###############################################################################
+# Patka
+###############################################################################
+patka: Sponzoři,odporovatelé & koho podporujeme my
+pataktxt: patce

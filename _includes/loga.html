@@ -1,0 +1,26 @@
+<!-- Clients Aside -->
+<!--    
+<aside class="clients"> 
+<section id="two" class="container content-section text-center">
+<div class="inner">
+<div class="container ">
+-->
+<section id="one" class="wrapper style6 special">
+    <div class="inner">
+        <header class="major">
+            <h2>{{ site.logaTit }}</h2>
+            <p>{{ site.logaTxt }} </p>
+        </header>
+    <div class="row">
+        {% for i in site.loga %}
+        <a href="{{ i.url }}" data-toggle="collapse">
+            <img src="images/{{ i.img }}" class="img-circle person" alt="{{ i.popis }}" width="255" height="255">
+        </a>
+        {% endfor %}
+        <p>"{{i.url}}"</p>
+    </div>
+    <!-- 
+    </div>
+    </aside> 
+    -->
+</section>

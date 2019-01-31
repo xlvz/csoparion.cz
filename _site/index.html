@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<!--
+  Original Design: Spectral by HTML5 UP
+    html5up.net | @n33co
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+  Jekyll build mod
+-->
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ČSOP ARION</title>
+    <meta name="description" content="• Základní organizace Českého svazu ochránců přírody se sídlem v Olomouci (ZO ČSOP 71/18) • Péče o přírodu, živé zahrady, údržba zeleně, přednášky, akce pro veřejnost, osvětová činnost • Střední Morava, Východní Čechy, Vysočina •
+">
+    <!--[if lte IE 8]><script src="/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="canonical" href="http://localhost:4000/">
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/timeline.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico?">
+    <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie9.css" /><![endif]-->
+    <link rel="alternate" type="application/rss+xml" title="ČSOP ARION" href="http://localhost:4000/feed.xml">
+</head>
+
+
+  <body class="landing">
+
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+
+      <!-- Header -->
+<header id="header" class="alt">
+  <h1><a href="/index.html">ČSOP ARION</a></h1>
+  <nav id="nav">
+    <ul>
+      <li class="special">
+        <a href="#menu" class="menuToggle"><span>Menu</span></a>
+        <div id="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            
+            
+            <li><a href="/elements.html">Dokumentace</a></li>
+            
+            
+            
+            
+            
+            <li><a href="/generic.html">Slovník péče o přírodovědné lokality</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a href="https://cloud.owncube.com/login">Přihlásit se</a></li>
+            <li><a href="https://cloud.owncube.com/login">Úložiště</a></li>
+            <li><a href="/feed.xml"
+                   class="icon fa-feed"> RSS Feed</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+      
+      <!-- Banner -->
+<section id="banner">
+    <div class="inner">
+        <h2>ČSOP ARION</h2>
+        <p><p>• Základní organizace Českého svazu ochránců přírody se sídlem v Olomouci (ZO ČSOP 71/18) • Péče o přírodu, živé zahrady, údržba zeleně, přednášky, akce pro veřejnost, osvětová činnost • Střední Morava, Východní Čechy, Vysočina •</p>
+</p>
+        <!--							<ul class="actions">
+            <li><a href="#" class="button special">Podpořte nás</a></li>
+            </ul>
+        -->
+    </div>
+    <a href="#one" class="more scrolly special">Chcete vědět víc?</a>
+</section>
+
+      
+      <!-- One -->
+<section id="one" class="wrapper style1 special">
+    <div class="inner">
+        <header class="major">
+            <h2>Co je naším posláním?</h2>
+            <p>Soustředíme na střední Moravu a východní Čechy. Pátráme po přírodovědně    cenných lokalitách, o které se poté s láskou staráme. Občas se podíváme i za         hranice. Intenzivně spolupracujeme s místními botaniky a zoology, aby nám pomohli    nalézt ty nejcennější a nejohroženější druhy a lokality. Často začínáme tam, kde to  jiné podobné organizace vzdávají. Vždyť mnohé druhy, které se snažíme zachránit pro  další generace, nikde jinde v České republice neuvidíte! Jsou jimi například vzácní  motýli modrásek černoskvrnný a hnědásek květelový, saranče vrzavá, křivatec český a  mnohé další. Každým dnem se náš záběr rozšiřuje tak, abychom zachránili největší     poklady naší přírody!
+            </p>
+        </header>
+        <ul class="icons major">
+            <img src="images/logoArionAlpha@3.png" alt="" />
+<!--            
+            <li><span class="icon fa-tree major style1"><span class="label">Lorem</span></span></li>
+            <li><span class="icon fa-fire major style2"><span class="label">Ipsum</span></span></li>
+            <li><span class="icon fa-leaf major style3"><span class="label">Dolor</span></span></li>
+-->
+            </ul>
+    </div>
+</section>
+
+      
+      <!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Leaflet Map</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css" />
+</head>
+<body>
+
+    <div id="map" style=" width: 100px; height:400px; min-height: 100%; min-width: 100%; display: block" ></div>
+    <script src="http://cdn.leafletjs.com/leaflet-0.7/leaflet.js"> </script>
+
+<script>
+	var planes = [
+            ["Borová - upolíny pod kravínem", 49.7517719, 16.1539497],
+            ["Radiměr - Stráně v České Radiměři: Západ", 49.6976736, 16.3901142],
+            ["Radiměr - Stráně v České Radiměři: Vychod", 49.6958589, 16.3946953],
+            ["Hořepníky v České Rybné", 49.8031508, 16.0833258],
+            ["Stráně u Pěčíkova", 49.7042094, 16.3907783],
+            ["U mírovské věznice", 49.7952500, 16.8575864],
+            ["Oldřiš - vachta u dráhy", 49.7251589, 16.2030256],
+            ["Stráně u Pěčíkova: Rockerova louka", 49.7208214, 16.7829789],
+            ["Stráně u Pěčíkova: U modřínů", 49.7232006, 16.7805436],
+            ["Stráně u Pěčíkova: Třtina pod dráty", 49.7232211, 16.7814342],
+            ["Stráně u Pěčíkova: Dráty", 49.7215981, 16.7859722],
+            ["Petrůvka", 49.7161553, 16.7624908],
+            ["Rašelina na Plaňavě", 49.7722858, 16.1106269],
+            ["Plechtinec", 49.7111325, 16.7695933],
+            ["Radiměr - Karpaty: Východní stráň", 49.7107228, 16.4134103],
+            ["Radiměr - Karpaty: Západní stráň", 49.7101731, 16.4080731],
+            ["Radiměr - Sad", 49.7042094, 16.3907783],
+            ["Radiměr - Hlavní stráň", 49.7029050, 16.3958639],
+            ["Rozstání", 49.7354444, 16.7235869],
+            ["Vranová Lhota: S-stráňka pod lesem", 49.7238247, 16.8202606],
+            ["Vranová Lhota: SZ-habry", 49.7222989, 16.8136944],
+            ["Vranová Lhota: Z-spáleniště", 49.7219797, 16.8093278],
+            ["Vranová Lhota: S-stáň u obce", 49.7192278, 16.8255956],
+            ["Vranová Lhota: SZ-průsek", 49.7229508, 16.8181147],
+            ["Vranová Lhota: Z-rybníček", 49.7195450, 16.8098158],
+		];
+
+        var map = L.map('map').setView([49.7, 15.4], 7);
+        mapLink = 
+            '<a href="http://openstreetmap.org">OpenStreetMap</a>';
+        L.tileLayer(
+            'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; ' + mapLink + ' Contributors',
+            maxZoom: 18,
+            }).addTo(map);
+
+		for (var i = 0; i < planes.length; i++) {
+			marker = new L.marker([planes[i][1],planes[i][2]])
+				.bindPopup(planes[i][0])
+				.addTo(map);
+		}
+        L.circle([49.7354, 16.7238], 10000).addTo(map); // Mor 
+        L.circle([49.7722, 16.1106], 10000).addTo(map);       
+        L.circle([49.7025,  16.4050], 1400).addTo(map);       
+    </script>
+</body>
+</html>
+
+
+      
+      <!-- Two -->
+<section id="two" class="wrapper alt style2">
+    
+    <section class="spotlight">
+        <div class="image"><img src="images/hranenam.jpg" alt="" /></div><div class="content">
+            <h2>Údržba přírodně cenných lokalit</h2>
+            <p><ul>
+  <li>výsadby zeleně, lesní výsadby</li>
+  <li>budování živých zahrad (jezírka, skalky pro ještěrky, motýlí záhony,   ptačí budky…)</li>
+  <li>údržba zeleně, kácení dřevin</li>
+  <li>budování návštěvnické infrastruktury</li>
+  <li>výukové programy pro školy</li>
+  <li>osvětové akce pro veřejnost</li>
+  <li>dobrovolnické víkendovky a tábory na nejzajímavějších lokalitách       našeho kraje</li>
+  <li>exkurze do přírody</li>
+  <li>provoz první olomoucké semínkovny</li>
+  <li>a je toho mnohem víc! Nebojte se nás kontaktovat, umíme i zázraky na   počkání!</li>
+</ul>
+</p>
+        </div>
+    </section>
+    
+    <section class="spotlight">
+        <div class="image"><img src="images/18-07-15-004.JPG" alt="" /></div><div class="content">
+            <h2>Hlavní zájmové druhy motýlů</h2>
+            <p><p>Naším velkým cílem je záchrana či znovunavrácení do přírody některých krásných a vzácných druhů motýlů</p>
+<ul>
+  <li>modrásek černoskvrnný (<it>Phengaris arion</it>)</li>
+  <li>hnědásek květelový</li>
+  <li>okáč skalní</li>
+  <li>modrásek bahenní (<it>Phengaris nausithous</it>)</li>
+</ul>
+</p>
+        </div>
+    </section>
+    
+    <section class="spotlight">
+        <div class="image"><img src="images/18-01-17-118.JPG" alt="" /></div><div class="content">
+            <h2>Hlavní zájmové druhy rostlin</h2>
+            <p><p>“A zajímají nás samozřejmě i rostliny. Na našich lokalitách najdete třeba tyto klenot:”</p>
+<ul>
+  <li>pětiprstka žežulník</li>
+  <li>jalovec obecný</li>
+  <li>okrotice bílá</li>
+  <li>cídivka různobarvá</li>
+  <li>hořec křížatý</li>
+  <li>hořec hořepník (<it>Gentiana pneumonanthe</it>)</li>
+  <li>hořeček brvitý</li>
+  <li>prstnatec májový</li>
+  <li>upolín nejvyšší</li>
+  <li>a spoustu dalších</li>
+</ul>
+</p>
+        </div>
+    </section>
+    
+    <section class="spotlight">
+        <div class="image"><img src="images/18-11-09-000.JPG" alt="" /></div><div class="content">
+            <h2>Boj se suchem</h2>
+            <p><p>Obnova přirorených mokřadů, budování malých vodních nádrží ve volné krajině</p>
+</p>
+        </div>
+    </section>
+    
+</section>
+
+      
+      
+
+        <!-- <section id="" class="container content-section text-center" >
+-->
+<section id="" class="wrapper style3 special">
+    <div class="inner">
+        <header class="text-center">
+            <h2>Naše historie a současnost</h2>
+        </header>
+    </div>
+    <ul class="timeline">
+        
+        <li class="">
+            <div class="timeline-image">
+                <img class="img-circle img-responsive" src="/images/logoJaro.jpg" alt="">
+            </div>
+    <div class="timeline-panel">
+        <div class="timeline-heading">
+            <h4 class="subheading">Co bylo před založením?</h4>
+        </div>
+        <div class="timeline-body">
+            <p class="text-muted">Naše organizace vznikla v únoru roku 2015 a byli jsme v podstatě parta  studentů, které nadchla myšlenka dělat něco aktivně pro naši krásnou přírodu. Ale    nezačínali jsme od nuly – někteří z nás už tenkrát měli bohaté praktické zkušenosti  z letních brigád u ČSOP JARO Jaroměř. Od našich jaroměřským kolegů jsme nezískali    jen know-how, ale také první zapůjčený křovinořez, první víceméně pojízdné vozidlo a v neposlední řadě taky první lokality na česko-moravském pomezí, které nám s velkou  úlevou a radostí přenechali.</p>
+        </div>
+    </div>
+        </li>
+        
+        <li class="timeline-inverted">
+            <div class="timeline-image">
+                <img class="img-circle img-responsive" src="/images/aktivity.jpg" alt="">
+            </div>
+    <div class="timeline-panel">
+        <div class="timeline-heading">
+            <h4 class="subheading">2016</h4>
+        </div>
+        <div class="timeline-body">
+            <p class="text-muted">Rozjíždíme se… Po přípravných jednáních s vlastníky lokalit a prvních   zkušenostech se získáváním stanovisek a povolení se pouštíme do opravdové práce.     Hned na jaře jsme vykáceli několik hektarů zarostlých starých pastvin, kde dosud     přežívaly zbytkové populace kriticky ohroženého modráska černoskvrnného. A u toho    přemýšlíme, jak se vlastně naše organizace bude jmenovat. Latinské jméno modráska    černoskvrnného, které je Phengaris arion, bylo velmi inspirativní. Od teď jsme       Arioni!</p>
+        </div>
+    </div>
+        </li>
+        
+        <li class="">
+            <div class="timeline-image">
+                <img class="img-circle img-responsive" src="/images/17-11-09-059.JPG" alt="">
+            </div>
+    <div class="timeline-panel">
+        <div class="timeline-heading">
+            <h4 class="subheading">2017</h4>
+        </div>
+        <div class="timeline-body">
+            <p class="text-muted">Jedeme na plný plyn… Staráme se již o bezmála 20 hektarů přírodně       cenných lokalit. Ze střední Moravy jsme se prosekali a prokáceli třeba až na Praděd, kde dáváme do pořádku zanikající květnaté horské louky. Taky jsme každou chvíli na   jižní Moravě, kde pomáháme našim kamarádům z ČSOP Morava se záchrannou takových      lokalit, jako jsou Pouzdřanská step, Svatý kopeček u Mikulova, Syslovce u Nenkovic a podobně. Když se chceme podívat ještě dál, pomáháme našim kolegům na Slovensku.      Kamarádi z organizací KOZA a Pre Prírodu nás vždy rádi vidí, protože už ví, že když  přijede Arion, budou minimálně létat stromy vzduchem. A nezapomeňme na krásný        projekt ve spolupráci s ČSOP Pražská pastvina a ČSOP JARO Jaroměř – pustili jsme se  naplno do záchrany jednoho z našich nejvzácnějších motýlů – okáče skalního. Naše     křovinořezy proto okusily jak poslední české lokality v Českém středohoří, tak třeba lokality v okolí Vídně a Bratislavy. A brzy vrátíme okáče skalní i do Prahy! A       v neposlední řadě jsme spolu s kupou dalších organizací založili Koalici proti       palmovému oleji, která má za cíl skrze snížení spotřeby palmového oleje zpomalit     kácení tropických deštných lesů. A vypadá to, že se nám to podaří. Nebo minimálně    výrobci potravin mají z naší kampaně strach a začínají palmový olej ve velkém        nahrazovat našimi evropskými oleji!</p>
+        </div>
+    </div>
+        </li>
+        
+        <li class="timeline-inverted">
+            <div class="timeline-image">
+                <img class="img-circle img-responsive" src="/images/18-06-09-124.JPG" alt="">
+            </div>
+    <div class="timeline-panel">
+        <div class="timeline-heading">
+            <h4 class="subheading">2018</h4>
+        </div>
+        <div class="timeline-body">
+            <p class="text-muted">Nepolevujeme… V roce 2018 jsme se skutečně nezastavili. Všechny naše    tradiční lokality vzkvétají a populace modrásků černoskvrnných, na kterých je to     nejlépe vidět, vzrostly z původních několika málo jedinců někdy až na stovky         jedinců! A to nás popohání dál… V letošním roce jsme proto šli do zatím největší     výzvy – 4 hektary vzrostlého borůvčí na okraji Velké kotliny v Jeseníkách. Dokázali  jsme to, a tak věříme, že teď nás už nezastaví nic!
+</p>
+        </div>
+    </div>
+        </li>
+        
+        <li class="">
+            <div class="timeline-image">
+                <img class="img-circle img-responsive" src="/images/zapojse.jpg" alt="">
+            </div>
+    <div class="timeline-panel">
+        <div class="timeline-heading">
+            <h4 class="subheading">2019</h4>
+        </div>
+        <div class="timeline-body">
+            <p class="text-muted">Jaký bude rok 2019? Nechme se překvapit</p>
+        </div>
+    </div>
+        </li>
+        
+        <li class="timeline-inverted">
+            <div class="timeline-image">
+                <img class="img-circle img-responsive" src="/images/zapojse.jpg" alt="">
+            </div>
+        </li>
+    </ul>
+</section>
+
+      
+      
+
+      <section id="one" class="wrapper style1 special">
+    <div class="inner">
+        <header class="major">
+            <h2>Lidé & kontakty</h2>
+            <p>ZO ČSOP 71/18 Arion, Kmochova 25, 779 00 Olomouc, IČO 04377818, číslo účtu 2600875491/2010 </p>
+        </header>
+<div class="row center"> 
+<!--<div class="container content-section text-center"> -->
+    <div class="col-sm-1"> 
+        <p class="text-center"><strong>Roman Kalous</strong></p><br>
+        <a href="#demo" data-toggle="collapse">
+            <img src="images/lideKalous.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+        </a>
+        <div id="demo" class="collapse">
+            <p>Předseda organizace</p>
+            <p>roman.kalous@csoparion.cz</p>
+            <p>604 654 499</p>
+        </div>
+    </div>
+    <div class="col-sm-2">
+        <p class="text-center"><strong>Kamil Máralík</strong></p><br>
+        <a href="#demo2" data-toggle="collapse">
+            <img src="images/lideMaralik.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+        </a>
+        <div id="demo2" class="collapse">
+            <p>Hlavní fyzická síla</p>
+            <p>kamil.maralik@csoparion.cz</p>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <p class="text-center"><strong>Ondřej Pospíšil</strong></p><br>
+        <a href="#demo3" data-toggle="collapse">
+            <img src="images/lidePospisil.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+        </a>
+        <div id="demo3" class="collapse">
+            <p>botanik</p>
+            <p>ondrej.pospisil@csoparion.cz</p>
+        </div>
+    </div>
+</div>
+<div class="row center">
+    <div class="col-sm-4"> 
+        <p class="text-center"><strong>Zuzana Kubištová</strong></p><br>
+        <a href="#demo" data-toggle="collapse">
+            <img src="images/lideKubistova.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+        </a>
+        <div id="demo" class="collapse">
+            <p>Hospodářka</p>
+            <p>zuzana.kubistova@csoparion.cz</p>
+        </div>
+    </div>
+    <div class="col-sm-5">
+        <p class="text-center"><strong>Gita Matlášková</strong></p><br>
+        <a href="#demo2" data-toggle="collapse">
+            <img src="images/lideMatlaskova.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+        </a>
+        <div id="demo2" class="collapse">
+            <p>Koordinátorka kampaní,</p>
+            <p>specialistka na palmový olej</p>
+            <p>gita.matlaskova@csoparion.cz</p>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <p class="text-center"><strong>Martina Předotová</strong></p><br>
+        <a href="#demo3" data-toggle="collapse">
+            <img src="images/lidePredotova.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+        </a>
+        <div id="demo3" class="collapse">
+            <p>Environmentální lektorka a kreativec</p>
+            <p>martina.predotova@csoparion.cz</p>
+        </div>
+    </div>
+</div>
+</div>
+<!--</div>-->
+
+
+      <!-- box -->
+<section id="three" class="wrapper style5 special">
+    <div class="inner">
+        <header class="major">
+            <h2>Ohrožení, ochrana & přístupnost</h2>
+            <p></p>
+        </header>
+        <ul class="features">
+            
+            <li class="icon fa-">
+                <h3>Kdo se může zapojit?</h3>
+                <p>-  Dobrovolník
+-  Brigádník
+-  Dárce
+-  Podporovatel, Propagátor
+-  Organizátor
+-  Odborný poradce
+-  Botanik
+-  Zoolog
+-  Ornitolog
+-  Krajinář
+-  Průvodce
+-  Ajťák
+-  Projektový manažer
+-  Fundraiser
+-  Kuchař
+-  Truhlář
+-  Umělec
+-  Fotograf
+-  Lektor EVVO
+-  Inovátor
+-  Vyjednavač
+-  Řidič
+-  Věrný přítel na FB
+</p>
+            </li>
+            
+            <li class="icon fa-task">
+                <h3>Aktivity</h3>
+                <p>-  Výzkum a realizaci projektů
+-  Granty
+-  Vzdělávací a výukové programy
+-  Biologické průzkumy
+-  Interpretační programy
+-  Zelený PR pro firmy
+-  Dobrovolnictví
+-  Kampaně
+-  Přednášky
+-  Projekce
+-  Akce pro veřejnost
+-  Poznávací výlety
+-  Průvodcovství přírodou
+-  Stáže pro studenty
+</p>
+            </li>
+            
+            <li class="icon fa-">
+                <h3>Kde jsme?</h3>
+                <p>- Olomouc
+-  Haná
+-  Východní Čechy
+-  Jižní Morava
+-  Orlické hory, České Středohoří
+-  Slovensko
+-  Indonésie
+</p>
+            </li>
+            
+            <!-- <li class="icon fa-headphones">
+                <h3></h3>
+                <p></p>
+                </li>;
+                </ul>
+            -->
+    </div>
+</section>
+
+      
+      <!-- patka -->					
+<section id="cta" class="wrapper style4">
+    
+    <div class="inner">
+        <header>
+            <h2>Sponzoři,odporovatelé & koho podporujeme my</h2>
+            <p></p>
+        </header>
+        <ul class="actions vertical">
+            <li><a href="#" class="button fit special">Propagovat</a></li>
+            <li><a href="#" class="button fit special">Podpořte nás</a></li>
+        </ul>
+    </div>
+</section>
+
+
+      <!-- Clients Aside -->
+<!--    
+<aside class="clients"> 
+<section id="two" class="container content-section text-center">
+<div class="inner">
+<div class="container ">
+-->
+<section id="one" class="wrapper style6 special">
+    <div class="inner">
+        <header class="major">
+            <h2>Kdo nás podporuje & a koho podpurujeme my</h2>
+            <p> </p>
+        </header>
+    <div class="row">
+        
+        <a href="www.jarojaromer.cz" data-toggle="collapse">
+            <img src="images/logoJaro.jpg" class="img-circle person" alt="ČSOP JARO Jaroměř" width="255" height="255">
+        </a>
+        
+        <a href="http://www.csopmorava.cz/" data-toggle="collapse">
+            <img src="images/logoCsopMorava.jpg" class="img-circle person" alt="ČSOP Morava" width="255" height="255">
+        </a>
+        
+        <a href="http://koza.sk/" data-toggle="collapse">
+            <img src="images/logoKoza.png" class="img-circle person" alt="Karpatské ochranárske združenie altruistov" width="255" height="255">
+        </a>
+        
+        <a href="http://preprirodu.sk/" data-toggle="collapse">
+            <img src="images/logoPrePrirodu.png" class="img-circle person" alt="Pre Prírodu" width="255" height="255">
+        </a>
+        
+        <a href="http://prazskapastvina.cz/" data-toggle="collapse">
+            <img src="images/logoPastvina.png" class="img-circle person" alt="Pražská pastvina" width="255" height="255">
+        </a>
+        
+        <a href="http://stoppalmovemuoleji.cz/" data-toggle="collapse">
+            <img src="images/logoPalmOil.png" class="img-circle person" alt="Koalice proti palmovému oleji" width="255" height="255">
+        </a>
+        
+        <p>""</p>
+    </div>
+    <!-- 
+    </div>
+    </aside> 
+    -->
+</section>
+
+
+      <!-- Footer -->
+<footer id="footer">
+    <ul class="icons">
+        
+        
+        
+        <li><a target="_blank" href="https://github.com/<username>" class="icon fa-github"
+                ><span class="label">github</span></a></li>
+        
+        
+        
+        
+        
+        <li><a target="_blank" href="https://linkedin.com/in/<username>" class="icon fa-linkedin-square"
+                ><span class="label">linkedin-square</span></a></li>
+        
+        
+        
+        
+        
+        <li><a target="_blank" href="https://facebook.com/csop.arion/" class="icon fa-facebook-official"
+                ><span class="label">facebook-official</span></a></li>
+        
+        
+        
+    </ul>
+    <ul class="copyright">
+        <li>&copy; 
+            
+            
+            2018,
+            
+            2019
+            ČSOP ARION</li>
+        <li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+        <li>Built with: <a href="http://jekyllrb.com" target="_blank">Jekyll</a></li>
+    </ul>
+</footer>
+
+
+      <!-- Scripts -->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/jquery.scrollex.min.js"></script>
+<script src="/js/jquery.scrolly.min.js"></script>
+<script src="/js/skel.min.js"></script>
+<script src="/js/util.js"></script>
+<!--[if lte IE 8]><script src="/js/ie/respond.min.js"></script><![endif]-->
+<script src="/js/main.js"></script>
+
+
+    </div>
+
+  </body>
+
+</html>

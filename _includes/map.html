@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Leaflet Map</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css" />
+</head>
+<body>
+
+    <div id="map" style=" width: 100px; height:400px; min-height: 100%; min-width: 100%; display: block" ></div>
+    <script src="http://cdn.leafletjs.com/leaflet-0.7/leaflet.js"> </script>
+
+<script>
+	var planes = [
+            ["Borová - upolíny pod kravínem", 49.7517719, 16.1539497],
+            ["Radiměr - Stráně v České Radiměři: Západ", 49.6976736, 16.3901142],
+            ["Radiměr - Stráně v České Radiměři: Vychod", 49.6958589, 16.3946953],
+            ["Hořepníky v České Rybné", 49.8031508, 16.0833258],
+            ["Stráně u Pěčíkova", 49.7042094, 16.3907783],
+            ["U mírovské věznice", 49.7952500, 16.8575864],
+            ["Oldřiš - vachta u dráhy", 49.7251589, 16.2030256],
+            ["Stráně u Pěčíkova: Rockerova louka", 49.7208214, 16.7829789],
+            ["Stráně u Pěčíkova: U modřínů", 49.7232006, 16.7805436],
+            ["Stráně u Pěčíkova: Třtina pod dráty", 49.7232211, 16.7814342],
+            ["Stráně u Pěčíkova: Dráty", 49.7215981, 16.7859722],
+            ["Petrůvka", 49.7161553, 16.7624908],
+            ["Rašelina na Plaňavě", 49.7722858, 16.1106269],
+            ["Plechtinec", 49.7111325, 16.7695933],
+            ["Radiměr - Karpaty: Východní stráň", 49.7107228, 16.4134103],
+            ["Radiměr - Karpaty: Západní stráň", 49.7101731, 16.4080731],
+            ["Radiměr - Sad", 49.7042094, 16.3907783],
+            ["Radiměr - Hlavní stráň", 49.7029050, 16.3958639],
+            ["Rozstání", 49.7354444, 16.7235869],
+            ["Vranová Lhota: S-stráňka pod lesem", 49.7238247, 16.8202606],
+            ["Vranová Lhota: SZ-habry", 49.7222989, 16.8136944],
+            ["Vranová Lhota: Z-spáleniště", 49.7219797, 16.8093278],
+            ["Vranová Lhota: S-stáň u obce", 49.7192278, 16.8255956],
+            ["Vranová Lhota: SZ-průsek", 49.7229508, 16.8181147],
+            ["Vranová Lhota: Z-rybníček", 49.7195450, 16.8098158],
+		];
+
+        var map = L.map('map').setView([49.7, 15.4], 7);
+        mapLink = 
+            '<a href="http://openstreetmap.org">OpenStreetMap</a>';
+        L.tileLayer(
+            'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; ' + mapLink + ' Contributors',
+            maxZoom: 18,
+            }).addTo(map);
+
+		for (var i = 0; i < planes.length; i++) {
+			marker = new L.marker([planes[i][1],planes[i][2]])
+				.bindPopup(planes[i][0])
+				.addTo(map);
+		}
+        L.circle([49.7354, 16.7238], 10000).addTo(map); // Mor 
+        L.circle([49.7722, 16.1106], 10000).addTo(map);       
+        L.circle([49.7025,  16.4050], 1400).addTo(map);       
+    </script>
+</body>
+</html>
+

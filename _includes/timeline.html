@@ -1,0 +1,31 @@
+<!-- <section id="" class="container content-section text-center" >
+-->
+<section id="" class="wrapper style3 special">
+    <div class="inner">
+        <header class="text-center">
+            <h2>{{ site.timelinetitle }}</h2>
+        </header>
+    </div>
+    <ul class="timeline">
+        {% for i in site.tm %}
+        <li class="{{ i.pos }}">
+            <div class="timeline-image">
+                <img class="img-circle img-responsive" src="{{ site.baseurl }}/images/{{ i.img }}" alt="">
+            </div>
+    <div class="timeline-panel">
+        <div class="timeline-heading">
+            <h4 class="subheading">{{ i.tit }}</h4>
+        </div>
+        <div class="timeline-body">
+            <p class="text-muted">{{ i.txt }}</p>
+        </div>
+    </div>
+        </li>
+        {% endfor %}
+        <li class="timeline-inverted">
+            <div class="timeline-image">
+                <img class="img-circle img-responsive" src="{{ site.baseurl }}/images/zapojse.jpg" alt="">
+            </div>
+        </li>
+    </ul>
+</section>

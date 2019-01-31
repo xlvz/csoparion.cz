@@ -1,0 +1,22 @@
+<!-- box -->
+<section id="three" class="wrapper style5 special">
+    <div class="inner">
+        <header class="major">
+            <h2>{{ site.boxTit }}</h2>
+            <p>{{ site.boxTxt }}</p>
+        </header>
+        <ul class="features">
+            {% for i in site.box %}
+            <li class="icon fa-{{ i.icn }}">
+                <h3>{{ i.tit }}</h3>
+                <p>{{ i.txt }}</p>
+            </li>
+            {% endfor %}
+            <!-- <li class="icon fa-headphones">
+                <h3>{{ site.ThreeFour }}</h3>
+                <p>{{ site.ThreeFourCom }}</p>
+                </li>;
+                </ul>
+            -->
+    </div>
+</section>

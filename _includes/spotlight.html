@@ -1,0 +1,11 @@
+<!-- Two -->
+<section id="two" class="wrapper alt style2">
+    {% for i in site.blok %}
+    <section class="spotlight">
+        <div class="image"><img src="images/{{ i.img }}" alt="" /></div><div class="content">
+            <h2>{{ i.tit }}</h2>
+            <p>{{ i.txt | markdownify }}</p>
+        </div>
+    </section>
+    {% endfor %}
+</section>
